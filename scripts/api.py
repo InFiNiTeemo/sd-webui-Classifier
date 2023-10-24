@@ -19,7 +19,7 @@ is_load = False
 def get_model(device):
     global cls_model, is_load
     if not is_load:
-        model_weight_path = "/tmp/models/stable-diffusion/best_model.pth"
+        model_weight_path = "/tmp/models/stable-diffusion/flip.pth"
         cls_model = create_model(num_classes=2, has_logits=False).to(device)
         cls_model = load_state_dict(torch.load(model_weight_path, map_location=device))
     return cls_model
