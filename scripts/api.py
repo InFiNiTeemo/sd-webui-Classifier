@@ -7,9 +7,6 @@ import gradio as gr
 import cv2
 from PIL import Image
 import numpy as np
-import insightface
-from insightface.app import FaceAnalysist
-from insightface.data import get_image as ins_get_image
 import torch
 from torchvision import transforms
 from scripts.vit_model import vit_base_patch16_224_in21k as create_model
